@@ -12,11 +12,12 @@ internal struct RadioCollection<Data, Content>: View where Data: RandomAccessCol
     
     private let content: (Data.Element) -> Content
     private let data: Data
+    private let trailingSpace: Bool
     @Environment(\.radioButtonColor) private var radioColor
     
     @Binding var selectedData: Data.Element?
     
-    public init(selectedData: Binding<Data.Element?>, data: Data, @ViewBuilder content: @escaping (Data.Element) -> Content) {
+    public init(selectedData: Binding<Data.Element?>, data: Data, trailingSpace Bool, @ViewBuilder content: @escaping (Data.Element) -> Content) {
         self._selectedData = selectedData
         self.content = content
         self.data = data

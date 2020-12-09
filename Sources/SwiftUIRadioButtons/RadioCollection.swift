@@ -37,7 +37,7 @@ internal struct RadioCollection<Data, Content>: View where Data: RandomAccessCol
                         .foregroundColor(radioColor)
                 }
                 content(element)
-                if trailingSpace && element.id != data.last?.id {
+                if trailingSpace || element.id != data.last?.id {
                     Spacer()
                 }
             }

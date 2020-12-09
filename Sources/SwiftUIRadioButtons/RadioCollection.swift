@@ -19,6 +19,7 @@ internal struct RadioCollection<Data, Content>: View where Data: RandomAccessCol
     
     public init(selectedData: Binding<Data.Element?>, data: Data, trailingSpace Bool, @ViewBuilder content: @escaping (Data.Element) -> Content) {
         self._selectedData = selectedData
+        self.trailingSpace = trailingSpace
         self.content = content
         self.data = data
     }

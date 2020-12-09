@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |spec|
 spec.name         = "SwiftUIRadioButtons"
-spec.version      = "0.1.1"
+spec.version      = "0.1.2"
 spec.homepage      = "https://github.com/imokhtar/SwiftUIRadioButtons"
 spec.summary      = "Radio buttons collection views written puerly in SwiftUI follwing its philshophy."
 spec.description  = <<-DESC
